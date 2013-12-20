@@ -1,0 +1,18 @@
+<% if @error != nil %>
+  <b>Error: <%= @error %></b>
+<% end %>
+
+<h3> Employee LogIn </h3>
+
+<p>
+  <%= label_tag "username" %>
+  <br>
+  <%= text_field_tag :usernme, "", placeholder: "Username" %>
+</p>
+
+<p>
+  <%= label_tag "password" %>
+  <br>
+  <%= password_field_tag :password, "", placeholder: "Password" %>
+  <br>
+<%= submit_tag "LogIn" %>
